@@ -1,0 +1,6 @@
+.card_form{
+    box-shadow: 0 0 10px 0 ;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}

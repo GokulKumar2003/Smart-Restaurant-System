@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function show(){
+                document.getElementById("home").style.display="none";
+                document.getElementById("formid").style.display="block";  
+            }
+        </script>
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <title>Welcome</title>
+        <link rel="stylesheet" href="button.css"/>
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="formstyle.css"/>
+        <style>
+            ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0px 0px;
+    overflow: hidden;
+    background-color: black;
+    }
+    
+    li {
+    float: right;
+    border-right: 1px solid #bbb;
+    }
+    
+    li a {
+    
+    display: block;
+    color: #bbb;
+    text-align: center;
+    font-size: 22px;
+    font-family: cursive;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+    color: black;
+    background-color: rgb(244, 250, 244);
+    }
+    .active{
+        background-color: #bbb; /* style for active navbar */
+        color: black;
+    }
+            .full_size{
+                margin-top:"100%";
+                background-color:"red";
+                height:"100px";
+                
+            }
+            .bgp{
+                background-image: url('bgi_form.jpg');          /* background-image use pannurom */
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* max-width: 100%;
+                height: auto; */
+            }
+            .bgp_form{
+                background-image: url('bgi_form.jpg');          /* background-image use pannurom */
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .fa {
+                padding:1%;
+font-size: 25px;
+width: 2%;
+background-color: black;
+text-align: center;
+text-decoration: none;
+}
+.fa:hover{
+    color: white;
+}
+
+.fa-facebook{
+color: #3B5998;
+background-color: black;
+}
+.fa-instagram{
+color: red;
+background-color: black;
+}
+.fa-twitter{
+color: #55ACEE;;
+background-color: black;
+}
+.fa-youtube{
+color:#bb0000;
+background-color: black;
+
+}
+.fa-linkedin{
+color: #007bb5;
+background-color: black;
+}
+.fa-google{
+color: #dd4b39;
+background-color: black;
+}
+.contactdiv{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+.button{
+        cursor: pointer;
+        font-size: 16px;
+        padding: 14px 21px;
+        margin: 5px;
+        font-family: cursive;
+        border: 2px solid black;
+
+    }
+    .btn{
+        color: black;
+        background-color: #bbb;
+    }
+
+    .btn:hover{
+       background-color: black;
+       color:  #bbb; 
+    }
+        </style>
+    </head>
+
+    <body style="font-family:cursive;" class="bgp">
+        <div id="home" display="block">
+            <div style="box-sizing:border-box;margin:-10px" class="card2">
+                <ul> 
+                    <li style="border-left: 1px solid black;float: right;"><a href="#admin">Admin Login</a></li>                   
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#home" class="active">Home</a></li> 
+                    <p style="color:#bbb;margin-left:1%;float:left;font-size:18px;">Classic Kitchen</p>
+                </ul>
+            </div>
+            <div style=" float:middle; margin-top: 10%; margin-left: 60%; opacity: 10; font-size: 16px; color: white;" id="glow" class="card" >
+                <h1 class="outline">CLASSIC KITCHEN</h1>
+                <h2 class="outline">Welcomes you</h2>
+                <a href = "form.php">
+                <button class = "button btn" style="vertical-align:middle">Get Started</button>
+                </a>
+            </div>
+        
+          <div style="float: bottom;color:#bbb; margin-left: -20px;font-family:cursive;margin-right: -20px; background-color: black; text-align: center; font-size: 20px;">
+            <p>
+            <a href = "#" class = "fa fa-google" ></a>classickitchen@gmail.com<br>
+            <i class = "fa fa-phone icon"></i>044 - 12345678, 044 - 87654321<br>
+        
+            <!--<a href="mailto:classickitchenceg22@gmail.com">Email ID</a></p><br>-->
+            <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+            <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+            <p>Designed and Developed by Tech Wizards.</p>
+          </div>
+      </div>
+      <div id="formid" style=" display: none;" >
+        <div class="card_form bgi_form" id="glow" style="font-size: 20px; padding: 5%; margin: 5% 30% 0% 30%;" style="display:none;">
+            <form action="send" method="post">
+                    <h2 style="text-align:center">USER LOGIN</h2>
+                    <input type="text" placeholder="Enter your name." name="uname" required><br><br>
+                    <input type="email" placeholder = "Enter your email." name="email" required><br><br>
+                    <button type="submit" class="button btn"><span class="outline">Login</span></button><br>
+                    <div>
+                        <button type="button" class="button outline" id="butid"><span>Cancel</span></button>  
+                    </div>
+            </form>
+        </div>
+        <div style="float: bottom;margin-top: 175px; margin-left: -20px; margin-right: -20px; background-color: #bbb; text-align: center; font-size: 20px;">
+            <br><p>Contact Us<br>
+            CLASSIC KITCHEN<br>
+            +91-9256398102<br>
+            info@classickitchen.in<br>
+            <a href="mailto:classickitchenceg22@gmail.com">Email ID</a></p><br>
+          </div>
+      </div>
+</body>
+</html>

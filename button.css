@@ -1,0 +1,38 @@
+.card {
+  	box-shadow: 0 0 10px 0 ;
+    border-radius: 10px;
+    padding: 100px;
+	  background: inherit;
+	  backdrop-filter: blur(4px);
+    width: 20vw;
+    display: block;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.card2{
+    box-shadow: 0 0 100px 0 ;
+	background: inherit;
+	backdrop-filter: blur(100px);
+    display: block;
+}
+.outline {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c59b64e4, 0 0 40px #c59b64e4, 0 0 50px #c59b64e4, 0 0 60px #c59b64e4, 0 0 70px #c59b64e4;
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c59b64e4, 0 0 40px #c59b64e4, 0 0 50px #c59b64e4, 0 0 60px #c59b64e4, 0 0 70px #c59b64e4;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #d7861de4, 0 0 40px #d7861de4, 0 0 50px #d7861de4, 0 0 60px #d7861de4, 0 0 70px #d7861de4, 0 0 80px #d7861de4;
+      box-shadow: 0 0 20px #fff, 0 0 30px #d7861de4, 0 0 40px #d7861de4, 0 0 50px #d7861de4, 0 0 60px #d7861de4, 0 0 70px #d7861de4, 0 0 80px #d7861de4;
+    }
+}
